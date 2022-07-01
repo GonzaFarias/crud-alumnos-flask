@@ -17,7 +17,7 @@ def listar_alumno(id):
             return jsonify(alumno)  
     return alumno_no_encontrado("El alumno no fue encontrado")    
             
-#peticion POST: se crea un alumno a partir de una ID, retorna el JSON.             
+#peticion POST: se crea un alumno, retorna el JSON.             
 @app.route('/alumnos', methods=['POST'])
 def crear_alumno():
     global contador
